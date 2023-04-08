@@ -19,7 +19,7 @@ const input={
         }
     }
 }
-const output = solc.compile(source)
+const output = solc.compile(source,1)
 // const bytecode=output.contracts['Inbox.sol'].Inbox.evm.bytecode.object
 // const abi=output.contracts['Inbox.sol'].Inbox.abi
 module.exports = output.contracts[':Inbox']
